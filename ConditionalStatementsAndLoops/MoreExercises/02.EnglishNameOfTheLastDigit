@@ -1,3 +1,0 @@
-function englishNameOfTheLastDigit(num) {
-    console.log(num);
-}

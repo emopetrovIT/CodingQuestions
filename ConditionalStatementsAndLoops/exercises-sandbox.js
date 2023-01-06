@@ -20,6 +20,21 @@ function solve1(age) {
 
 // solve1(5);
 
+function nextDay(year, month, day) {
+  if (year <= 99) year += 1900;
+  let date = new Date();
+  date.setDate(date.getDate() + 1);
+  let newDate = date.toISOString().split('T')[0];
+  [yyyy, mm, dd] = newDate.split('-');
+  console.log(`${yyyy}-${removeLeadingZeros(mm)}-${removeLeadingZeros(dd)}`);
+
+  function removeLeadingZeros(str) {
+    return str.replace(/^0+/, '');
+  }
+}
+
+nextDay(2016, 9, 30);
+
 function solve(number, precision) {
   if (precision > 15) {
     precision = 15;
