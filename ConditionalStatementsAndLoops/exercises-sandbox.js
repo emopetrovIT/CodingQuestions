@@ -33,7 +33,7 @@ function nextDay(year, month, day) {
   }
 }
 
-nextDay(2016, 9, 30);
+// nextDay(2016, 9, 30);
 
 function solve(number, precision) {
   if (precision > 15) {

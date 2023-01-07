@@ -1,4 +1,4 @@
-function solve(input) {
+function tripletsOfLatinLetters(input) {
   let num = Number(input);
   let firstLetter = '';
   let secondLetter = '';
@@ -15,4 +15,4 @@ function solve(input) {
   }
 }
 
-solve('2');
+tripletsOfLatinLetters('2');

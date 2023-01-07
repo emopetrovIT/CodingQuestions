@@ -1,4 +1,4 @@
-function solve(searchString, character, stringToMatch) {
+function rightPlace(searchString, character, stringToMatch) {
   let modificatedString = searchString.replace('_', character);
 
   if (modificatedString === stringToMatch) {
@@ -8,4 +8,4 @@ function solve(searchString, character, stringToMatch) {
   }
 }
 
-solve('Str_ng', 'I', 'Strong');
+rightPlace('Str_ng', 'I', 'Strong');
