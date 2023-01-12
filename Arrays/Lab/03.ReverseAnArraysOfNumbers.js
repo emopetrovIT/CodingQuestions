@@ -12,3 +12,12 @@ function reverseAnArrayOfNumbers(elementsCount, arr) {
 }
 
 reverseAnArrayOfNumbers(3, [1, 2, 3, 4, 5]);
+
+function reverseAnArrayOfNumbers1(nElements, arr) {
+  const slisedArray = arr.slice(0, nElements);
+  slisedArray.reverse();
+
+  console.log(slisedArray.join(' '));
+}
+
+reverseAnArrayOfNumbers1(3, [1, 2, 3, 4, 5]);

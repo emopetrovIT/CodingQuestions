@@ -1,5 +1,5 @@
 function cone(radius, height) {
-  let volume = (Math.PI * (Math.pow(radius, 2) * height)) / 3;
+  let volume = (Math.PI * Math.pow(radius, 2) * height) / 3;
   let baseSurfaceArea = Math.PI * Math.pow(radius, 2);
 
   let slantHeight = Math.sqrt(Math.pow(radius, 2) + Math.pow(height, 2));
