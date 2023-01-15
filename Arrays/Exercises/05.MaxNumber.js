@@ -23,5 +23,17 @@ function maxNumber(arr) {
   console.log(peaksArray.reverse().join(' '));
 }
 
-// maxNumber([14, 24, 3, 19, 15, 17]);
+maxNumber([14, 24, 3, 19, 15, 17]);
 maxNumber([51, 47, 32, 61, 21]);
+
+function maxNumber1(arr) {
+  let result = [];
+  while (arr.length !== 0) {
+    let [current, biggest] = [arr.shift(), Math.max(...arr)];
+    if (current > biggest) result.push(current);
+  }
+  console.log(result.join(' '));
+}
+
+maxNumber([14, 24, 3, 19, 15, 17]);
+maxNumber1([51, 47, 32, 61, 21]);
